@@ -79,7 +79,7 @@ import React, { useState, useEffect, useRef } from 'react';
      title: "",
      description: "",
      fullText: "",
-     img: "https://oncle-g.netlify.app/img/section/PHOTO-2026-02-07-12-26-43%202.jpg",
+     img: "https://like2300.github.io/Oncle-g/img/optimized/background.webp",
      overlayTitle: "",
      style: { width: '100%', top: '80px', zIndex: 4 }
    }
