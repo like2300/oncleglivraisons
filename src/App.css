@@ -1,0 +1,63 @@
+/* Hide scrollbar for popup */
+body.popup-open {
+  overflow: hidden;
+}
+
+/* Bar animation class */
+.bar-anim {
+  transform-origin: right;
+  border-radius: 9999px;
+  z-index: 10; /* Ensure bars are visible */
+}
+
+/* Origine gauche pour le panneau gauche */
+.side-panel.left .bar-anim {
+  transform-origin: right;
+}
+
+/* Side panel styles */
+.side-panel {
+  z-index: 20; /* Higher z-index to appear above other content */
+}
+
+/* Application de l'animation au texte */
+.fade-in-up {
+  opacity: 0;
+}
+
+/* Reveal element animation for scroll-triggered animations */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay variations for staggered animations */
+.reveal-element.delay-100 {
+  transition-delay: 100ms;
+}
+
+.reveal-element.delay-200 {
+  transition-delay: 200ms;
+}
+
+.reveal-element.delay-300 {
+  transition-delay: 300ms;
+}
+
+.reveal-element.delay-400 {
+  transition-delay: 400ms;
+}
+
+.reveal-element.delay-500 {
+  transition-delay: 500ms;
+}
+
+.reveal-element.delay-600 {
+  transition-delay: 600ms;
+}

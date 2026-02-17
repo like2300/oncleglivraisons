@@ -1,0 +1,541 @@
+@import "tailwindcss";
+
+/* Font face declarations for Halcom font family */
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Thin-BF648a7145280f9.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-ThinItalic-BF648a714522fdf.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Light-BF648a71454e889.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-LightItalic-BF648a71454d055.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Book-BF648a71455e035.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-BookItalic-BF648a71454e521.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Regular-BF648a71453957a.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Italic-BF648a71456443a.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Medium-BF648a714568789.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-MediumItalic-BF648a71455df9d.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Bold-BF648a714549635.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-BoldItalic-BF648a7145597de.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-ExtraBold-BF648a71454d82a.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-ExtraBoldItalic-BF648a714551827.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-Black-BF648a7144cd3a5.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halcom';
+  src: url('./fonts/halcom-font-family-1769100539-0/Halcom-BlackItalic-BF648a71455b3bd.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #f6d23a;
+  --color-primary-contrast: #333300;
+  --font-family-halcom: 'Halcom', sans-serif;
+}
+
+/* Apply Halcom font to the entire site */
+*, *::before, *::after {
+  font-family: var(--font-family-halcom);
+}
+
+html, body {
+  font-family: var(--font-family-halcom);
+}
+
+/* Animations principales */
+
+/* Définition de l'animation "breathe" (respiration) */
+@keyframes breathe {
+   0%, 100% {
+       transform: scaleX(1);
+       opacity: 0.5;
+   }
+   50% {
+       transform: scaleX(1.15);
+       opacity: 1;
+   }
+}
+
+/* Animation d'entrée pour le texte */
+@keyframes fadeInUp {
+   from {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Classe de base pour les barres animées */
+.bar-anim {
+   transform-origin: right;
+   animation-name: breathe;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   border-radius: 9999px;
+}
+
+/* Origine gauche pour le panneau gauche */
+.side-panel.left .bar-anim {
+   transform-origin: right;
+}
+
+/* Application de l'animation au texte */
+.fade-in-up {
+   animation: fadeInUp 1.2s ease-out forwards;
+   opacity: 0;
+}
+
+/* Float animation */
+@keyframes float {
+   0% { transform: translateY(0); opacity: 0.8; }
+   50% { transform: translateY(-6px); opacity: 1; }
+   100% { transform: translateY(0); opacity: 0.8; }
+}
+
+/* Slide animations */
+.slide-enter {
+   animation: slideIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide-exit {
+   animation: slideOut 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideIn {
+   0% { transform: translateX(100%) scale(0.9); opacity: 0; }
+   100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+@keyframes slideOut {
+   0% { transform: translateX(0) scale(1); opacity: 1; }
+   100% { transform: translateX(-100%) scale(0.9); opacity: 0; }
+}
+
+/* Enhanced card transition */
+.card-transition {
+   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Smooth next card preview animation */
+.next-card-transition {
+   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Scale animation */
+.scale-in {
+   animation: scaleIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes scaleIn {
+   0% { transform: scale(0.8); opacity: 0; }
+   100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fade animation */
+.fade-in {
+   animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+/* Slide from side animation */
+.slide-from-right {
+   animation: slideFromRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideFromRight {
+   0% { transform: translateX(50px); opacity: 0; }
+   100% { transform: translateX(0); opacity: 1; }
+}
+
+.slide-from-left {
+   animation: slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideFromLeft {
+   0% { transform: translateX(-50px); opacity: 0; }
+   100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Consistent transition for all slide content */
+.slide-content {
+   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Animation for content elements when slide enters */
+.slide-content-element {
+   animation: slideContentIn 0.8s 0.2s both;
+}
+
+@keyframes slideContentIn {
+   0% {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Apply different delays for staggered animations */
+.slide-content-element:nth-child(1) { animation-delay: 0.1s; }
+.slide-content-element:nth-child(2) { animation-delay: 0.2s; }
+.slide-content-element:nth-child(3) { animation-delay: 0.3s; }
+.slide-content-element:nth-child(4) { animation-delay: 0.4s; }
+
+/* Popup animations */
+.popup-image {
+   animation: float 6s ease-in-out infinite;
+}
+
+.popup-title {
+   animation: slideFromTop 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.popup-text {
+   animation: slideFromBottom 0.8s 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.popup-button {
+   animation: scaleIn 0.8s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideFromTop {
+   from { transform: translateY(-30px); opacity: 0; }
+   to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideFromBottom {
+   from { transform: translateY(30px); opacity: 0; }
+   to { transform: translateY(0); opacity: 1; }
+}
+
+/* Kinetic light effects */
+.kinetic-light-1, .kinetic-light-2, .kinetic-light-3 {
+   position: absolute;
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   filter: blur(40px);
+   z-index: -1;
+   animation: moveLight 8s infinite alternate;
+}
+
+.kinetic-light-1 {
+   top: 10%;
+   left: 10%;
+   animation-delay: 0s;
+}
+
+.kinetic-light-2 {
+   top: 60%;
+   left: 70%;
+   animation-delay: 2s;
+}
+
+.kinetic-light-3 {
+   top: 30%;
+   left: 50%;
+   animation-delay: 4s;
+}
+
+@keyframes moveLight {
+   0% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+   25% { transform: translate(20px, 30px) scale(1.2); opacity: 0.7; }
+   50% { transform: translate(-10px, 20px) scale(0.9); opacity: 0.4; }
+   75% { transform: translate(15px, -10px) scale(1.1); opacity: 0.6; }
+   100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+}
+
+/* Slide-in menu animation */
+.menu-overlay {
+   transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.menu-open { transform: translateY(0); }
+.menu-closed { transform: translateY(-100%); }
+
+/* Animation for showing the popup */
+.popup-show {
+   transform: scale(1) !important;
+   opacity: 1 !important;
+}
+
+/* Animation for elements with delay */
+.animate-fadeIn {
+   animation: fadeInUp 0.6s ease-out forwards;
+   opacity: 0;
+}
+
+/* CTA Button Styles */
+.cta-button {
+   transition: all 0.3s ease;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-secondary {
+   transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for CTA elements */
+@keyframes float {
+   0% { transform: translateY(0px); }
+   50% { transform: translateY(-10px); }
+   100% { transform: translateY(0px); }
+}
+
+.animate-float {
+   animation: float 3s ease-in-out infinite;
+}
+
+/* Wave animation styles */
+.svg-wave-animation {
+   animation: wavePulse 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes wavePulse {
+   0% { opacity: 0.7; transform: scaleY(1); }
+   50% { opacity: 1; transform: scaleY(1.02); }
+   100% { opacity: 0.7; transform: scaleY(1); }
+}
+
+.wave-group {
+   transform-origin: center;
+   animation: waveSwing 12s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes waveSwing {
+   0% { transform: rotate(0.3deg) translateX(-1px); }
+   25% { transform: rotate(-0.3deg) translateX(1px); }
+   50% { transform: rotate(0.4deg) translateX(-0.5px); }
+   75% { transform: rotate(-0.2deg) translateX(0.5px); }
+   100% { transform: rotate(0.3deg) translateX(-1px); }
+}
+
+/* Enhanced Animation Classes */
+.reveal-element {
+   opacity: 0;
+   transform: translateY(60px) scale(0.9);
+   transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-element.is-visible {
+   opacity: 1;
+   transform: translateY(0) scale(1);
+}
+
+/* Timeline-specific animations for more dynamic effect */
+.timeline-line .reveal-element {
+   transform: translateY(80px) perspective(1000px) rotateY(15deg);
+}
+
+.timeline-line .reveal-element.is-visible {
+   transform: translateY(0) perspective(1000px) rotateY(0);
+}
+
+/* Staggered delays for elegant sequential animation */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+
+@keyframes lineDraw {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+/* Effet de vibration Oncle G */
+.moto-vibration {
+  animation: vibration 0.2s iherit;
+}
+
+@keyframes vibration {
+  0% { transform: translate(0,0) rotate(0deg); }
+  25% { transform: translate(1px, 1px) rotate(0.5deg); }
+  50% { transform: translate(-1px, -1px) rotate(-0.5deg); }
+  75% { transform: translate(1px, -1px) rotate(0.2deg); }
+  100% { transform: translate(0,0) rotate(0deg); }
+}
+
+/* La ligne verticale style "route" */
+.timeline-path {
+  position: absolute;
+  left: 20px; /* Aligné avec tes points jaunes */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-image: linear-gradient(to bottom, #f6d23a 50%, transparent 50%);
+  background-size: 2px 20px; /* Style pointillés route */
+  z-index: 0;
+  transform-origin: top;
+  transition: transform 1s ease-out;
+}
+
+
+
+/* Animation "Respiration" pour les barres du Hero */
+@keyframes breathe {
+    0%, 100% { transform: scaleX(1); opacity: 0.5; }
+    50% { transform: scaleX(1.15); opacity: 1; }
+}
+.bar-anim {
+    transform-origin: right;
+    animation: breathe 3s ease-in-out infinite;
+}
+
+/* Float pour le livreur dans le popup */
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Intersection Observer Classes */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Global overflow-x hidden to prevent horizontal scroll while keeping sticky elements functional
+html, body {
+  overflow-x: hidden; Empêche le scroll horizontal globalement
+  width: 100%;
+  position: relative;
+}*/
+
+
+
+/* Assure-toi que la div racine React n'a pas d'overflow caché */
+#root {
+  overflow: visible;
+}
