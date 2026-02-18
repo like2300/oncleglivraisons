@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const OrderSection = () => {
   const sectionRef = useRef(null);
   const sliderRef = useRef(null);
+  const [showPrev, setShowPrev] = useState(false);
 
   // Logique d'animation au scroll
   useEffect(() => {
@@ -23,6 +24,13 @@ const OrderSection = () => {
     return () => revealElements.forEach(el => observer.unobserve(el));
   }, []);
 
+  // Gestion de la visibilité du bouton précédent
+  const handleScroll = () => {
+    if (sliderRef.current) {
+      setShowPrev(sliderRef.current.scrollLeft > 100);
+    }
+  };
+
   // Fonction de scroll manuel
   const scrollNext = () => {
     if (sliderRef.current) {
@@ -30,13 +38,35 @@ const OrderSection = () => {
     }
   };
 
+  const scrollPrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div ref={sectionRef} className="w-full py-10 md:py-20 bg-black relative overflow-hidden">
+
+      {/* Bouton de navigation gauche */}
+      {showPrev && (
+        <div className="pointer-events-none absolute top-0 left-0 bottom-0 w-24 md:w-40 z-20 flex items-center justify-start pl-4 md:pl-10">
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+          <button
+            onClick={scrollPrev}
+            className="relative w-14 h-14 bg-yellow-400/10 backdrop-blur-xl border border-yellow-400/30 rounded-full flex items-center justify-center shadow-2xl pointer-events-auto hover:bg-yellow-400 hover:scale-110 transition-all group"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400 group-hover:text-black transition-colors rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      )}
 
       {/* Slider Horizontal */}
       <div
         id="slider"
         ref={sliderRef}
+        onScroll={handleScroll}
         className="flex overflow-x-scroll space-x-6 px-6 md:px-20 no-scrollbar snap-x snap-mandatory"
       >
 
