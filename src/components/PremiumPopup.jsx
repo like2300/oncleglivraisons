@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import Livreur from '../assets/livreur/Livreur.webp';
+
 const PremiumPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -114,7 +114,7 @@ const PremiumPopup = () => {
           {/* Centered Image */}
           <div className="image-container relative overflow-hidden">
             <img
-              src={Livreur}
+              src="/assets/IMG_4160.PNG"
               alt="Livreur"
               className="w-full h-[380px] object-contain popup-image"
             />
