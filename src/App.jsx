@@ -12,6 +12,7 @@ import ProGPage from './pages/ProGPage';
 import GProMarketingPage from './pages/GProMarketingPage';
 import ConciergerieExpressPage from './pages/ConciergerieExpressPage';
 import AlloGazPage from './pages/AlloGazPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import PremiumPopup from './components/PremiumPopup';
 import AudioPlayer from './components/AudioPlayer';
 import Loader from './components/Loader';
@@ -64,6 +65,7 @@ function App() {
           <Route path="/services/g-promarketing" element={<GProMarketingPage />} />
           <Route path="/services/conciergerie-express" element={<ConciergerieExpressPage />} />
           <Route path="/services/allo-gaz" element={<AlloGazPage />} />
+          <Route path="/politique-confidentialite" element={<PrivacyPolicyPage />} />
         </Routes>
       </div>
     </>

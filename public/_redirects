@@ -1,5 +1,2 @@
-# Serve index.html for client-side routing, but preserve actual files
-/* /index.html 200
-
-# Alternative approach - serve index.html for all non-file requests
-# /*    /index.html   200
+# Redirect all non-file requests to index.html for client-side routing
+/*    /index.html   200

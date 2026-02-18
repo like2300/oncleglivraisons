@@ -1,0 +1,262 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.oncleglivraisons.com/#organization",
+      "name": "Oncle G Livraisons",
+      "alternateName": ["Oncle G", "ONCLE G Livraisons", "Oncle G Brazzaville"],
+      "url": "https://www.oncleglivraisons.com",
+      "logo": "https://www.oncleglivraisons.com/img/Oncle%20G%20-%20Logo.svg",
+      "image": "https://www.oncleglivraisons.com/img/og-image.jpg",
+      "description": "Oncle G Livraisons - Service de livraison express à Brazzaville. Livraison de colis, gaz, conciergerie et e-commerce. Un sourire, c'est déjà une livraison réussie.",
+      "telephone": "+242-066-338-224",
+      "whatsapp": "+242-066-338-224",
+      "email": "contact@oncleglivraisons.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CG",
+        "addressRegion": "Brazzaville",
+        "addressLocality": "Brazzaville"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Brazzaville"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -4.261063,
+        "longitude": 15.279534
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Mobile Money, Card",
+      "currenciesAccepted": "XAF",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services d'Oncle G Livraisons",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Livraison Express Oncle G",
+              "description": "Service de livraison rapide pour colis, documents et courses à Brazzaville"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Allo'Gaz - Livraison de Gaz",
+              "description": "Livraison de bouteilles de gaz à domicile rapidement"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conciergerie Express",
+              "description": "Service de conciergerie pour vos tâches quotidiennes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "G-PRO E-Commerce",
+              "description": "Solution e-commerce clé en main pour votre business"
+            }
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wa.me/242066338224",
+          "inLanguage": "fr",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "resultReview": {
+          "@type": "Review",
+          "reviewAspect": "Service de livraison rapide et fiable"
+        }
+      },
+      "sameAs": [
+        "https://www.facebook.com/oncleglivraisons",
+        "https://www.instagram.com/oncleglivraisons/",
+        "https://x.com/OncleGLIVRAISON",
+        "https://www.tiktok.com/@oncle.g.livraisons",
+        "https://www.linkedin.com/in/oncle-g-livraisons-5272783a0/"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Oncle G",
+        "alternateName": "Oncle G Livraisons",
+        "slogan": "Un sourire, c'est déjà une livraison réussie",
+        "logo": "https://www.oncleglivraisons.com/img/Oncle%20G%20-%20Logo.svg"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+242-066-338-224",
+          "contactType": "customer service",
+          "areaServed": "CG",
+          "availableLanguage": "French"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+242-066-338-224",
+          "contactType": "sales",
+          "areaServed": "CG",
+          "availableLanguage": "French"
+        }
+      ],
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Client satisfait"
+          },
+          "reviewBody": "Service de livraison rapide et professionnel à Brazzaville. Oncle G livraisons est le meilleur service de coursier."
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.oncleglivraisons.com/#organization",
+      "name": "Oncle G Livraisons",
+      "url": "https://www.oncleglivraisons.com",
+      "logo": "https://www.oncleglivraisons.com/img/Oncle%20G%20-%20Logo.svg",
+      "sameAs": [
+        "https://www.facebook.com/oncleglivraisons",
+        "https://www.instagram.com/oncleglivraisons/",
+        "https://x.com/OncleGLIVRAISON",
+        "https://www.tiktok.com/@oncle.g.livraisons",
+        "https://www.linkedin.com/in/oncle-g-livraisons-5272783a0/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+242-066-338-224",
+        "contactType": "customer service",
+        "areaServed": "CG",
+        "availableLanguage": "French"
+      }
+    },
+    {
+      "@type": "DeliveryService",
+      "name": "Oncle G Livraisons",
+      "alternateName": "Oncle G",
+      "url": "https://www.oncleglivraisons.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Brazzaville"
+      },
+      "description": "Service de livraison express à Brazzaville avec Oncle G Livraisons. Livraison rapide de colis, documents et marchandises.",
+      "slogan": "Un sourire, c'est déjà une livraison réussie",
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Livraison express Brazzaville",
+          "description": "Livraison rapide et fiable de colis et documents à Brazzaville"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment commander une livraison avec Oncle G ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vous pouvez commander une livraison avec Oncle G Livraisons en nous contactant par téléphone au +242-066-338-224 ou via WhatsApp. Notre équipe est disponible de 8h à 22h tous les jours pour prendre votre commande."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les délais de livraison ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les délais de livraison dépendent de votre localisation à Brazzaville. En général, nos livraisons express sont effectuées dans la journée. Pour les livraisons de gaz et autres services spécifiques, nous nous engageons à livrer dans les plus brefs délais."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles zones couvrez-vous à Brazzaville ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oncle G Livraisons couvre l'ensemble de la ville de Brazzaville. Nos livreurs sont répartis dans différents quartiers pour assurer une couverture optimale et des délais de livraison réduits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les moyens de paiement acceptés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous acceptons plusieurs moyens de paiement : espèces, Mobile Money (Airtel Money, MTN Mobile Money), et cartes bancaires. La flexibilité est notre priorité pour votre confort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne le service de conciergerie express ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Notre service de conciergerie express vous permet de déléguer toutes vos courses et démarches quotidiennes. Il suffit de nous appeler, nous nous occupons de tout : courses, dépôts de documents, retraits, et autres tâches urgentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proposez-vous des services pour les entreprises ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, Oncle G propose G-PRO, une solution e-commerce clé en main pour les entreprises qui souhaitent développer leur activité en ligne. Nous offrons également des services de livraison réguliers pour les professionnels."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "name": "Oncle G Livraisons",
+      "alternateName": "Oncle G",
+      "url": "https://www.oncleglivraisons.com",
+      "description": "Oncle G Livraisons - Service de livraison express à Brazzaville",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.oncleglivraisons.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}

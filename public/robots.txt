@@ -1,6 +1,7 @@
-# Robots.txt for Oncle G Livraisons - www.oncleglivraisons.com
-# Optimized for SEO - Allow all search engines to crawl the site
+# Robots.txt pour Oncle G Livraisons - www.oncleglivraisons.com
+# Optimisé pour le référencement naturel - Tous les moteurs de recherche
 
+# Autoriser tous les robots à crawler le site
 User-agent: *
 Allow: /
 Allow: /services/
@@ -9,19 +10,41 @@ Allow: /contacts
 Allow: /commander
 Allow: /emplois
 Allow: /communaute
+Allow: /img/
+Allow: /images/
+Allow: /assets/
 
-# Crawl-delay for polite crawling (optional)
+# Pages à ne pas indexer (si nécessaire)
+Disallow: /admin/
+Disallow: /private/
+
+# Délai de crawl pour un comportement poli
 Crawl-delay: 1
 
-# Sitemap location
+# Emplacement du sitemap
 Sitemap: https://www.oncleglivraisons.com/sitemap.xml
 
-# Google specific (optional)
+# Configuration spécifique pour Googlebot
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0.5
 
-# Bing specific (optional)
+# Configuration spécifique pour Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /
+Allow: /img/
+Allow: /images/
+
+# Configuration spécifique pour Bingbot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+# Configuration spécifique pour DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# Configuration spécifique pour Baiduspider
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
