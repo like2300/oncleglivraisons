@@ -43,7 +43,7 @@ const AlloGazPage = () => {
         <meta property="og:url" content="https://www.oncleglivraisons.com/services/allo-gaz" />
         <meta property="og:title" content="Allô'Gaz - Oncle G Livraisons | Livraison de Gaz à Brazzaville" />
         <meta property="og:description" content="Service de livraison de bouteilles de gaz Allô'Gaz par Oncle G Livraisons. Rapide, fiable et sécurisé à Brazzaville. Service de livraison express avec un sourire." />
-        <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -58,7 +58,7 @@ const AlloGazPage = () => {
         <meta property="twitter:url" content="https://www.oncleglivraisons.com/services/allo-gaz" />
         <meta property="twitter:title" content="Allô'Gaz - Oncle G Livraisons | Livraison de Gaz à Brazzaville" />
         <meta property="twitter:description" content="Service de livraison de bouteilles de gaz Allô'Gaz par Oncle G Livraisons. Rapide, fiable et sécurisé à Brazzaville. Service de livraison express avec un sourire." />
-        <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
 
         {/* Structured Data / Schema Markup */}

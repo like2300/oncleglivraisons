@@ -26,7 +26,7 @@ const Footer = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.oncleglivraisons.com/" />
         <meta property="og:description" content="Oncle G Livraisons - Service de livraison express à Brazzaville. Découvrez nos services innovants : livraison express, livraison de gaz, conciergerie, e-commerce et plus encore. Un sourire, c'est déjà une livraison réussie." />
-        <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -40,7 +40,7 @@ const Footer = () => {
         <meta property="twitter:creator" content="@OncleGLIVRAISON" />
         <meta property="twitter:url" content="https://www.oncleglivraisons.com/" />
         <meta property="twitter:description" content="Oncle G Livraisons - Service de livraison express à Brazzaville. Découvrez nos services innovants : livraison express, livraison de gaz, conciergerie, e-commerce et plus encore. Un sourire, c'est déjà une livraison réussie." />
-        <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
       </Helmet>
 

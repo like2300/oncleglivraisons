@@ -24,7 +24,7 @@ const EmployerPage = () => {
         <meta property="og:url" content="https://www.oncleglivraisons.com/emplois" />
         <meta property="og:title" content="Emploi - Oncle G Livraisons | Rejoignez Notre Équipe à Brazzaville" />
         <meta property="og:description" content="Découvrez les opportunités d'emploi chez Oncle G Livraisons à Brazzaville. Postulez aux offres d'emploi et rejoignez notre équipe dynamique. Service de livraison express avec un sourire." />
-        <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -39,7 +39,7 @@ const EmployerPage = () => {
         <meta property="twitter:url" content="https://www.oncleglivraisons.com/emplois" />
         <meta property="twitter:title" content="Emploi - Oncle G Livraisons | Rejoignez Notre Équipe à Brazzaville" />
         <meta property="twitter:description" content="Découvrez les opportunités d'emploi chez Oncle G Livraisons à Brazzaville. Postulez aux offres d'emploi et rejoignez notre équipe dynamique. Service de livraison express avec un sourire." />
-        <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
         
         {/* Structured Data / Schema Markup */}

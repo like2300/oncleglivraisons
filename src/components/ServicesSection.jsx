@@ -87,7 +87,7 @@ const ServicesSection = () => {
           <meta property="og:url" content="https://www.oncleglivraisons.com/services" />
           <meta property="og:title" content="Services - Oncle G Livraisons | Solutions de Livraison à Brazzaville" />
           <meta property="og:description" content="Découvrez tous les services d'Oncle G Livraisons à Brazzaville. G-PRO Illimité, G-PRO Marketing, Conciergerie Express, Allô'Gaz et plus encore. Service de livraison express avec un sourire." />
-          <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+          <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -102,7 +102,7 @@ const ServicesSection = () => {
           <meta property="twitter:url" content="https://www.oncleglivraisons.com/services" />
           <meta property="twitter:title" content="Services - Oncle G Livraisons | Solutions de Livraison à Brazzaville" />
           <meta property="twitter:description" content="Découvrez tous les services d'Oncle G Livraisons à Brazzaville. G-PRO Illimité, G-PRO Marketing, Conciergerie Express, Allô'Gaz et plus encore. Service de livraison express avec un sourire." />
-          <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+          <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
           <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
           
           {/* Structured Data / Schema Markup */}

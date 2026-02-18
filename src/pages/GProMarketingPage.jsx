@@ -44,7 +44,7 @@ const GProMarketingPage = () => {
         <meta property="og:url" content="https://www.oncleglivraisons.com/services/g-promarketing" />
         <meta property="og:title" content="G-PRO Marketing - Oncle G Livraisons | Solution E-commerce à Brazzaville" />
         <meta property="og:description" content="Découvrez le service G-PRO Marketing d'Oncle G Livraisons. Solution e-commerce clé en main à Brazzaville. Zéro stocks, Zéro charges, 100% ventes. Service de livraison express avec un sourire." />
-        <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -59,7 +59,7 @@ const GProMarketingPage = () => {
         <meta property="twitter:url" content="https://www.oncleglivraisons.com/services/g-promarketing" />
         <meta property="twitter:title" content="G-PRO Marketing - Oncle G Livraisons | Solution E-commerce à Brazzaville" />
         <meta property="twitter:description" content="Découvrez le service G-PRO Marketing d'Oncle G Livraisons. Solution e-commerce clé en main à Brazzaville. Zéro stocks, Zéro charges, 100% ventes. Service de livraison express avec un sourire." />
-        <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
 
         {/* Structured Data / Schema Markup */}

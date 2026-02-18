@@ -17,7 +17,7 @@ const SEO = ({
   description,
   keywords,
   canonical,
-  ogImage = 'https://www.oncleglivraisons.com/img/og-image.jpg',
+  ogImage = 'https://www.oncleglivraisons.com/assets/og-image.jpg',
   schema,
   isProductPage = false
 }) => {

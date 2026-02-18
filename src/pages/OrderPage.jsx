@@ -24,7 +24,7 @@ const OrderPage = () => {
         <meta property="og:url" content="https://www.oncleglivraisons.com/commander" />
         <meta property="og:title" content="Commander - Oncle G Livraisons | Service de Livraison à Brazzaville" />
         <meta property="og:description" content="Commandez facilement les services d'Oncle G Livraisons à Brazzaville. Processus simple et rapide pour bénéficier de nos solutions de livraison express. Service de livraison avec un sourire." />
-        <meta property="og:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -39,7 +39,7 @@ const OrderPage = () => {
         <meta property="twitter:url" content="https://www.oncleglivraisons.com/commander" />
         <meta property="twitter:title" content="Commander - Oncle G Livraisons | Service de Livraison à Brazzaville" />
         <meta property="twitter:description" content="Commandez facilement les services d'Oncle G Livraisons à Brazzaville. Processus simple et rapide pour bénéficier de nos solutions de livraison express. Service de livraison avec un sourire." />
-        <meta property="twitter:image" content="https://oncle-g.netlify.app/img/og-image.jpg" />
+        <meta property="twitter:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
         <meta property="twitter:image:alt" content="Oncle G - Service de livraison express à Brazzaville" />
         
         {/* Structured Data / Schema Markup */}

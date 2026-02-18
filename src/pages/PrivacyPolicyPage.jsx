@@ -19,7 +19,7 @@ const PrivacyPolicyPage = () => {
         <meta property="og:url" content="https://www.oncleglivraisons.com/politique-confidentialite" />
         <meta property="og:title" content="Politique de Confidentialité - Oncle G Livraisons" />
         <meta property="og:description" content="Découvrez comment Oncle G Livraisons protège vos données personnelles et respecte votre vie privée." />
-        <meta property="og:image" content="https://www.oncleglivraisons.com/img/og-image.jpg" />
+        <meta property="og:image" content="https://www.oncleglivraisons.com/assets/og-image.jpg" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
