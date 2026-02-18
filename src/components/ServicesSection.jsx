@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 const ServicesSection = () => {
   const sectionRef = useRef(null);
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -162,7 +164,7 @@ const ServicesSection = () => {
                 className={`reveal-element ${index === 0 ? 'delay-100' : 'delay-200'} group overflow-visible`}
               >
                 <img
-                  onClick={() => window.location.href = service.path}
+                  onClick={() => navigate(service.path)}
                   className="cursor-pointer w-full h-auto object-contain rounded-2xl  transition-all duration-300"
                   src={service.image}
                   alt={service.alt}
@@ -179,7 +181,7 @@ const ServicesSection = () => {
                 className={`reveal-element ${index === 0 ? 'delay-300' : 'delay-400'} group overflow-hidden`}
               >
                 <img
-                  onClick={() => window.location.href = service.path}
+                  onClick={() => navigate(service.path)}
                   className="cursor-pointer w-full h-auto object-contain rounded-2xl   transition-all duration-300"
                   src={service.image}
                   alt={service.alt}
