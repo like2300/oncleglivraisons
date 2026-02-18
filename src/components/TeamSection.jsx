@@ -76,7 +76,16 @@ const TeamSection = () => {
       description: "Je réfléchis avant d’agir, j’analyse avant de décider. J’aime transformer des intuitions en plans concrets et tracer des chemins qui tiennent dans le temps. Pour moi, la stratégie n’est pas une théorie : c’est ce qui permet aux idées d’atteindre leur vraie portée.",
       image: "/images/team/PHOTO-2026-02-17-12-57-25.jpg",
       shortDescription: "Je réfléchis avant d’agir, j’analyse..."
+    },
+    {
+      id: 9,
+      name: "Verthulia SATHOUD",
+      description: "Je suis réservée mais attentive. J’organise, je prévois, je m’assure que rien d’important ne passe entre les mailles du filet.Derrière ma réserve, il y a surtout le plaisir d’aider, d’accueillir et de faciliter le travail des autres. Quand tout se déroule sans stress, je sais que j’ai fait ma part.",
+      image: "/images/team/PHOTO-2026-02-18-15-44-57.jpg",
+      shortDescription: "Je suis réservée mais attentive..."
     }
+
+
 
     ];
   const openModal = (member) => {
