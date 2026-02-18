@@ -111,12 +111,13 @@ const SEO = ({
       {/* URL canonique */}
       <link rel="canonical" href={fullCanonical} />
 
-      {/* Open Graph / Facebook */}
+      {/* Open Graph / Facebook / WhatsApp */}
       <meta property="og:type" content={isProductPage ? "product" : "website"} />
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:secure_url" content={ogImage} />
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
