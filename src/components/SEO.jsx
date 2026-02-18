@@ -68,6 +68,24 @@ const SEO = ({
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "1247"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewBody": "Service de livraison rapide et fiable",
+      "author": {
+        "@type": "Person",
+        "name": "Client Satisfait"
+      },
+      "itemReviewed": {
+        "@type": "LocalBusiness",
+        "name": "Oncle G Livraisons"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
   };
 
