@@ -78,14 +78,19 @@ const TeamSection = () => {
       shortDescription: "Je réfléchis avant d’agir, j’analyse..."
     },
     {
-      id: 9,
+      id: 10,
       name: "Verthulia SATHOUD",
       description: "Je suis réservée mais attentive. J’organise, je prévois, je m’assure que rien d’important ne passe entre les mailles du filet.Derrière ma réserve, il y a surtout le plaisir d’aider, d’accueillir et de faciliter le travail des autres. Quand tout se déroule sans stress, je sais que j’ai fait ma part.",
       image: "/images/team/PHOTO-2026-02-18-15-44-57.jpg",
       shortDescription: "Je suis réservée mais attentive..."
+    },
+    {
+      id: 11,
+      name: "BALOU Amour",
+      description: "Technicien IT, je veille à ce que nos outils digitaux  et systèmes fonctionnent sans accro.",
+      image: "/images/team/PHOTO-2026-02-20-23-59-04.jpg",
+      shortDescription: "Technicien IT, je v..."
     }
-
-
 
     ];
   const openModal = (member) => {
