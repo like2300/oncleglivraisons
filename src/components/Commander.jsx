@@ -6,7 +6,7 @@ const StepsSection = () => {
       id: "01",
       title: "SUIVI EN TEMPS RÉEL",
       subtitle: "Votre livraison Oncle G Livraisons, comme un conte en direct",
-      description: "Vous voyez chaque étape de votre livraison Oncle G Livraisons, comme si vous suiviez un récit qui se déroule sous vos yeux. La transparence est notre manière de vous inclure dans l’histoire. Chez Oncle G Livraisons, nous croyons en la transparence totale de nos services.",
+      description: "Vous voyez chaque étape, comme si vous suiviez un récit qui se déroule sous vos yeux. La transparence est notre manière de vous inclure dans l'histoire.",
       image: "https://like2300.github.io/Oncle-g/optimized_gifs/optimized_gif_maps.gif",
       bgColor: "bg-white",
       textColor: "text-black",
